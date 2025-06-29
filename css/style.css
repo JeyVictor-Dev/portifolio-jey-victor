@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONTE */
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400, 500;
+    font-style: normal;
+  }
+
+body, main {
+    background-color: #070707;
+    font-family: "Inter", sans-serif;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+header {
+    background-color: #6118a5;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    color: #d1c4e9;
+}
+
+.Logo img {
+    width: 55px; 
+}
+
+/* SECTION SOBRE  */
+#sobre div {
+    background-color: #141414;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 60px;
+}
+
+#sobre .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 50%;
+}
+
+#sobre h1 {
+    color: #dbd8e1;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+#sobre .ola {
+    color: #895edf;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#sobre .roxo {
+    color: #895edf;
+}
+
+#sobre .dev-e-des {
+    color: #dbd8e1;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+#sobre p {
+    color: #fff;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+#sobre img {
+    width: 400px;
+    border-radius: 50% 20%;
+    box-shadow: 0 0 30px #00000080;
+    transition: 0.3s ease-in-out;
+}
+
+#sobre img:hover {
+    transform: scale(1.05);
+}
+
+#sobre button {
+    background-color: #6118a5;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#sobre button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#sobre button:hover {
+    background-color: #895edf;
+    transform: scale(1.05);
+}
+
+/* SECTION FORMACAO */
+
+#formacao {
+    width: 100%;
+    padding: 60px;
+    text-align: center;
+}
+
+.container-formacao {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#formacao h2 {
+    text-align: center;
+    color: #6118a5;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+#formacao ul {
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+#formacao ul li {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#formacao ul li strong {
+    font-size: 18px;
+    color: #dbd8e1;
+}
+
+#formacao ul li p {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+/* SECTION PORTIFOLIO */
+
+#portifolio {
+    padding: 60px;
+    background-color: #6118a5;
+    color: #fff;
+}
+
+#portifolio h2 {
+    text-align: center;
+    font-size: 38px;
+    color: #070707;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.card-projeto {
+    display: flex;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.imagem-projeto {
+    width: 40%;
+    object-fit: cover;
+}
+
+.conteudo-projeto {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.conteudo-projeto h3 {
+    font-size: 24px;
+    color: #b388ff;
+    margin-bottom: 10px;
+}
+
+.conteudo-projeto p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.conteudo-projeto a {
+    color: #d1c4e9;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.conteudo-projeto ul {
+    display: flex;
+    gap: 10px;
+}
+
+.conteudo-projeto ul li {
+    list-style: none;
+}
+
+.conteudo-projeto ul img {
+    width: 30px;
+}
+
+#portifolio .card-projeto {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 1000px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#portifolio .card-projeto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #00000080;
+}
+
+#portifolio img {
+    border-radius: 10px;
+}
+
+/* SECTION CONTATO */
+
+#contato {
+    width: 100%;
+    padding: 60px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: #dbd8e1;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 1px;
+}
+
+#contato label {
+    font-size: 16px;
+    color: #ccc;
+}
+
+#contato input,
+#contato textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+#contato input:focus,
+#contato textarea:focus {
+    outline: 2px solid #895edf;
+}
+
+#contato button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    background-color: #895edf;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contato button:hover {
+    background-color: #6e34b8;
+}
+
+  /* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #0f0f0f;
+    padding: 20px 0;
+    color: #dbd8e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0;
+}
+
+footer a {
+    color: #8e6ad4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #c2aaff;
+    text-decoration: underline;
+}
+  

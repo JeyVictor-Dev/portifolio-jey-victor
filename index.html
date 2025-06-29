@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Jey Victor</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <p>
+        <a class="Logo" href="index.html"
+          ><img src="imgs/png-code-removebg-preview.png" alt="logo"
+        /></a>
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#portifolio">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="sobre">
+        <div>
+          <div class="texto">
+            <h1>
+              <span class="ola">Olá, Eu sou</span> <br />
+              Jey Victor Malta<br /><span class="dev-e-des"
+                >E sou <span class="roxo">Desenvolvedor</span> e
+                <span class="roxo">Design</span></span
+              >
+            </h1>
+            <p>
+              Estudo Análise e Desenvolvimento de Sistemas na UNINTER, já
+              trabalhei freelancer com design gráfico. Atualmente estudo a área
+              de programação e faço alguns projetos pessoais.
+            </p>
+            <button>
+              <a
+                href="https://drive.google.com/file/d/19dhgUX0-AWsEQVE9o0bIup1TnOM0TQSZ/view?usp=drive_link"
+                target="_blank"
+                >Baixar CV</a
+              >
+            </button>
+          </div>
+          <img src="imgs/foto-minha.jpg" alt="foto-minha" />
+        </div>
+      </section>
+      <section id="formacao">
+        <div class="container-formacao">
+          <h2>Faculdades e Cursos</h2>
+          <ul>
+            <li>
+              <strong>UNINTER-2027</strong>
+              <p>
+                Estou estudando Linux, designer de software com figma e os
+                fundamentos do desenvolvimento de software (HTML, CSS e JS),
+                lógica de programação com python e sistemas da informação,
+                responsividade e design para dispositivos mobile.
+              </p>
+            </li>
+            <li>
+              <strong>UNIFACS-2024</strong>
+              <p>
+                Adquiri conhecimentos sobre modelagem de software e inovação,
+                sustentabilidade e competitividade empresarial, sistemas
+                computacionais e segurança, redes de computadores.
+              </p>
+            </li>
+            <li>
+              <strong>Fullstack Javascript Onebitcode-Atualmente</strong>
+              <p>
+                Adquiri conhecimentos de HTML, Lógica de Programação com
+                Javascript, responsibilidade e acessibilidade, Design UX/UI e
+                atualmente estou estudando CSS.
+              </p>
+            </li>
+            <li>
+              <strong>Python Fundamentos Onebitcode-2025</strong>
+              <p>Estudei os fundamentos da linguagem python.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="portifolio">
+        <h2>Projetos</h2>
+        <div class="card-projeto">
+          <img src="imgs/projeto1.png" alt="foto1" class="imagem-projeto" />
+          <div class="conteudo-projeto">
+            <h3>PetLife</h3>
+            <p>
+              Uma landing page de um clínica veterinária fictícia, para testar conhecimentos em desenvolvimento web.
+            </p>
+            <a href="https://petlife-mu.vercel.app/" target="_blank">Veja aqui</a>
+            <ul>
+              <li><img src="imgs/icons8-javascript.svg" alt="js" /></li>
+              <li><img src="imgs/icons8-css.svg" alt="css" /></li>
+              <li><img src="imgs/icons8-html.svg" alt="html" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-projeto">
+          <img src="imgs/projeto2.png" alt="foto2" class="imagem-projeto" />
+          <div class="conteudo-projeto">
+            <h3>Studio Ghibli</h3>
+            <p>
+              Um campo de pesquisa de animações do studio ghibli, feito completamente por IA.
+            </p>
+            <a href="https://studio-ghibli-umber.vercel.app/" target="_blank">Veja aqui</a>
+            <ul>
+              <li><img src="imgs/icons8-javascript.svg" alt="js" /></li>
+              <li><img src="imgs/icons8-css.svg" alt="css" /></li>
+              <li><img src="imgs/icons8-html.svg" alt="html" /></li>
+            </ul>
+          </div>
+        </div>
+          <div class="card-projeto">
+            <img src="imgs/projeto3.png" alt="Biblioteca em Python" class="imagem-projeto" />
+            <div class="conteudo-projeto">
+              <h3>Biblioteca em Python</h3>
+              <p>
+                Este projeto em Python simula uma pequena biblioteca, permitindo cadastrar,
+                buscar e listar livros. Ele foi feito com foco em lógica de programação,
+                sem interface gráfica, e é ideal para quem está aprendendo estruturas
+                condicionais, listas e dicionários.
+              </p>
+              <a href="https://github.com/JeyVictor-Dev/biblioteca-em-python" target="_blank">Veja aqui</a>
+              <ul>
+                <li><img class="python" src="imgs/icons8-python.svg" alt="Python" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contato">
+        <h2>Contato</h2>
+          <form>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="tel">Telefone:</label>
+            <br>
+            <input type="tel" id="tel" name="tel" required>
+            <br>
+            <label for="ms">Mensagem:</label>
+            <br>
+            <textarea
+              name="msm"
+              id="ms"
+              rows="10"
+              cols="30"
+              required
+            ></textarea>
+            <br />
+            <button type="submit">Enviar</button>
+          </form>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="https://github.com/JeyVictor-Dev" class="github">Desenvolvido por @JeyVictorDev</a></li>
+        <li><a href="https://icons8.com.br/icon/13441/python" target="_blank" >Site dos ICONS Utilizados</a></li>
+        <li><p>&copy;2025</p></li>
+      </ul>
+    </footer>
+  </body>
+</html>
