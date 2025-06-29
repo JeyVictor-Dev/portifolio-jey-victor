@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-/* FONTE */
+/* FONTE DA PÁGINA */
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400, 500;
+    font-weight: 400, 500, 600;
     font-style: normal;
   }
 
@@ -371,4 +371,116 @@ footer a:hover {
     color: #c2aaff;
     text-decoration: underline;
 }
+  
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    nav ul {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    /* SOBRE */
+    #sobre div {
+      flex-direction: column;
+      height: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    #sobre .texto {
+      max-width: 100%;
+      align-items: center;
+    }
+  
+    #sobre h1 {
+      font-size: 38px;
+    }
+  
+    #sobre p {
+      text-align: justify;
+    }
+  
+    #sobre img {
+      width: 250px;
+      margin-top: 20px;
+    }
+  
+    /* FORMAÇÃO */
+    #formacao {
+      padding: 40px 20px;
+    }
+  
+    .container-formacao {
+      text-align: left;
+    }
+  
+    /* PORTFÓLIO */
+    #portifolio .card-projeto {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .imagem-projeto {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .conteudo-projeto {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .conteudo-projeto h3,
+    .conteudo-projeto p,
+    .conteudo-projeto a,
+    .conteudo-projeto ul {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .conteudo-projeto ul {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .conteudo-projeto ul li img {
+        width: 30px;
+    }
+    
+  
+    /* CONTATO */
+    #contato {
+      padding: 40px 20px;
+    }
+  
+    #contato h2 {
+      font-size: 28px;
+    }
+  
+    /* FOOTER */
+    footer ul {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    footer {
+      font-size: 12px;
+      padding: 15px 10px;
+      text-align: center;
+    }
+  }
   
